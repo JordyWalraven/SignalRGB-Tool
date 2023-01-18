@@ -1,0 +1,245 @@
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.csproj.AssemblyReference.cache
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfoInputs.cache
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfo.cs
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.csproj.CoreCompileInputs.cache
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.exe
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.deps.json
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.runtimeconfig.json
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.pdb
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\ElectronCgi.DotNet.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.AspNetCore.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.Extensions.Logging.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.Sinks.File.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.csproj.CopyComplete
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.pdb
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
+C:\Github\Electron practice\Signal-Tools\Signal-Tools\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.exe
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.deps.json
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.runtimeconfig.json
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Core.pdb
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\ElectronCgi.DotNet.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.AspNetCore.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.Extensions.Logging.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\bin\Debug\net6.0-windows\Serilog.Sinks.File.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.csproj.AssemblyReference.cache
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfoInputs.cache
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfo.cs
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.csproj.CoreCompileInputs.cache
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.csproj.CopyComplete
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.pdb
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
+C:\Github\Signal-Tool\Signal-Tools\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Core.exe
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Core.deps.json
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Core.runtimeconfig.json
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Core.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Core.pdb
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\ElectronCgi.DotNet.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Serilog.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Serilog.AspNetCore.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Serilog.Extensions.Logging.dll
+C:\Github\Signal-Tool\Development\core\Core\bin\Debug\net6.0-windows\Serilog.Sinks.File.dll
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.csproj.AssemblyReference.cache
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfoInputs.cache
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfo.cs
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.csproj.CoreCompileInputs.cache
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.csproj.CopyComplete
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.dll
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.pdb
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
+C:\Github\Signal-Tool\Development\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.exe
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.deps.json
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.runtimeconfig.json
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.pdb
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\ElectronCgi.DotNet.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.AspNetCore.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Extensions.Logging.dll
+C:\Github\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Sinks.File.dll
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.AssemblyReference.cache
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfoInputs.cache
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfo.cs
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CoreCompileInputs.cache
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CopyComplete
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.dll
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.pdb
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
+C:\Github\Signal-Tool\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.exe
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.deps.json
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.runtimeconfig.json
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Core.pdb
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\ElectronCgi.DotNet.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.AspNetCore.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Extensions.Logging.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Sinks.File.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.AssemblyReference.cache
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfoInputs.cache
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfo.cs
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CoreCompileInputs.cache
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CopyComplete
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.pdb
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
+C:\Github\SignalToolElectron\Signal-Tool\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.exe
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.deps.json
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.runtimeconfig.json
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.pdb
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\ElectronCgi.DotNet.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.AspNetCore.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Extensions.Logging.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Sinks.File.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.AssemblyReference.cache
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfoInputs.cache
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfo.cs
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CoreCompileInputs.cache
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CopyComplete
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.pdb
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
+C:\Github\SignalToolElectron\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.exe
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.deps.json
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.runtimeconfig.json
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Core.pdb
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\ElectronCgi.DotNet.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.AspNetCore.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Extensions.Logging.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\Serilog.Sinks.File.dll
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.AssemblyReference.cache
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfoInputs.cache
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.AssemblyInfo.cs
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CoreCompileInputs.cache
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.csproj.CopyComplete
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.dll
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.pdb
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
+C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
