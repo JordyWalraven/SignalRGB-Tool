@@ -41,6 +41,11 @@ class Program
       return "none";
     });
 
+    connection.On<string>("getLocalAppdataPath", () =>
+    {
+      return Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+    });
+
     connection.Listen();
   }
 }

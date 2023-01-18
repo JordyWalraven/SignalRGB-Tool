@@ -36,8 +36,8 @@ const electronHandler = {
     },
   },
   fileHander : {
-    getDynamicPath: () => {
-      const paths = fs.readdirSync("C:/Users/jordy/AppData/Local/VortxEngine/")
+    getDynamicPath: (localPath:string) => {
+      const paths = fs.readdirSync(localPath+"/VortxEngine/")
       console.log(paths)
       let newestVersion = ["0","0","0"];
       paths.forEach((path: string) => {
@@ -58,10 +58,15 @@ const electronHandler = {
         }
       }});
       console.log(newestVersion)
-      const returnpath = "C:/Users/jordy/AppData/Local/VortxEngine/app-"+newestVersion[0]+"."+newestVersion[1]+"."+newestVersion[2]+"/Signal-x64/Effects/Dynamic/"
+      const returnpath = localPath+"/VortxEngine/app-"+newestVersion[0]+"."+newestVersion[1]+"."+newestVersion[2]+"/Signal-x64/Effects/Dynamic/"
       console.log(returnpath)
       return returnpath;
   },
+  getLocalPath:()=>{
+    let response =connection.send("getLocalAppdataPath");
+    return response;
+  }
+  ,
   async getHtmlFiles(dynamicFolder:string){;
     let fileNames =fs.readdirSync(dynamicFolder)
 

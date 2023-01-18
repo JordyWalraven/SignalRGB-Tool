@@ -1,3 +1,5 @@
+/* eslint-disable promise/always-return */
+/* eslint-disable promise/catch-or-return */
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -23,7 +25,10 @@ export default function App() {
   useEffect(() => {
     async function assignHtml(){
       const effectLogic = new EffectLogic();
-      let htmlFiles = await window.electron.fileHander.getHtmlFiles(window.electron.fileHander.getDynamicPath());
+      let htmlFiles ;
+      await window.electron.fileHander.getLocalPath().then(async(e)=>{
+      htmlFiles=  await window.electron.fileHander.getHtmlFiles(window.electron.fileHander.getDynamicPath(e));
+      })
       let modifiedHtmlFiles = [];
       htmlFiles.forEach((file) => {
         console.log(file)
