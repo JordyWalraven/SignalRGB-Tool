@@ -10,8 +10,6 @@ const fs = require('fs');
 const connection = new ConnectionBuilder().connectTo("dotnet","run","--project","./core/Core").build();
 
 
-
-
 connection.onDisconnect = () => {
   console.log('Lost connection to the .Net process');
 };
@@ -89,6 +87,10 @@ const electronHandler = {
   getCursorPosition:() => {
      let response = connection.send("getCursor");
       return response;
+  },
+  getKeyDown:()=>{
+    let response = connection.send("getKeyDown")
+    return response;
   }
 }
 };
