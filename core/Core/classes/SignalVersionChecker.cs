@@ -10,7 +10,7 @@ namespace Core
     public class SignalVersionChecker
     {
 
-        public string GetSignalPath()
+        public static string GetSignalPath()
         {
             string signalVersion = "";
             string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);

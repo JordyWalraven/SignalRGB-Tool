@@ -1,9 +1,9 @@
 .quickContainer {
   position: fixed;
   top: 0;
-  left: -30%;
+  left: -300px;
   background-color: #0F1620;
-  width: 30%;
+  width: 300px;
   height: 100%;
   transition: all 0.5s ease;
   text-align: center;

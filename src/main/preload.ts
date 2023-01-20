@@ -118,6 +118,10 @@ const actionHandler = {
   copyEffect:(filePath:string)=>{
     let response = connection.send("copyEffect",filePath)
     return response;
+  },
+  openDynamicFolder:()=>{
+    let response = connection.send("openDynamicFolder")
+    return response;
   }
 }
 

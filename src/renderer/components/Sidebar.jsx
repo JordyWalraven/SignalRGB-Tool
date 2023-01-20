@@ -4,8 +4,10 @@
 /* eslint-disable prettier/prettier */
 import React,{useState} from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import FileCopyIcon from '@mui/icons-material/FileCopy';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import CodeIcon from '@mui/icons-material/Code';
+import FolderIcon from '@mui/icons-material/Folder';
 import '../css/quickMenu.css'
 import "../css/basicStyle.css"
 import { Button } from '@mui/material';
@@ -16,7 +18,7 @@ const Sidebar = () => {
 
   function foldMenu(){
     if(collapsed){
-      document.getElementById("sideBar").style.left = "-30%";
+      document.getElementById("sideBar").style.left = "-300px";
       document.getElementById("backgroundBlur").style.opacity = "0";
       document.getElementById("backgroundBlur").style.left = "100%";
       document.getElementById("menuButton").style.left = "-1.6%";
@@ -24,8 +26,8 @@ const Sidebar = () => {
     } else {
       document.getElementById("sideBar").style.left = "0";
       document.getElementById("backgroundBlur").style.opacity = "0.5";
-      document.getElementById("backgroundBlur").style.left = "30%";
-      document.getElementById("menuButton").style.left = "27%";
+      document.getElementById("backgroundBlur").style.left = "300px";
+      document.getElementById("menuButton").style.left = "270px";
       document.getElementById("icon").style.rotate = "90deg";
     }
     if(collapsed){
@@ -71,6 +73,13 @@ const Sidebar = () => {
     input.click();
   }
 
+  function openDynamicFolder(){
+    console.log("Opening dynamic folder");
+    window.actionHandler.openDynamicFolder().then((e)=>{
+      console.log(e)
+    })
+  }
+
 
   return (
     <>
@@ -84,7 +93,10 @@ const Sidebar = () => {
       <Button variant='contained' style={{ backgroundColor:"#3A4E60"}} onClick={relaunchSignalRGB}>Relaunch SignalRGB<RefreshIcon style={{"marginLeft":"10px"}}/></Button>
       <br/>
       <br/>
-      <Button variant='contained' style={{ backgroundColor:"#3A4E60"}} onClick={copyEffect}>Copy effect<RefreshIcon style={{"marginLeft":"10px"}}/></Button>
+      <Button variant='contained' style={{ backgroundColor:"#3A4E60"}} onClick={copyEffect}>Copy effect to dynamic<FileCopyIcon style={{"marginLeft":"10px"}}/></Button>
+      <br/>
+      <br/>
+      <Button variant='contained' style={{ backgroundColor:"#3A4E60"}} onClick={openDynamicFolder}>Open dynamic folder<FolderIcon style={{"marginLeft":"10px"}}/></Button>
     </div>
     <div className='backgroundBlur' id="backgroundBlur" onClick={backgroundClick}>
 
