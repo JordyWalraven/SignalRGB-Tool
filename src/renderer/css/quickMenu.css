@@ -1,0 +1,41 @@
+.quickContainer {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  background-color: #0F1620;
+  width: 30%;
+  height: 100%;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.backgroundBlur {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background-color: #0F1620;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: blur(4px);
+  transition: all 0.5s ease;
+}
+
+.PopOutButton {
+  position: fixed;
+  top: 40%;
+  left: -1.6%;
+  width: 80px;
+  height: 80px;
+  background-color: #0F1620;
+  border-radius: 5rem 5rem 0 0;
+  rotate: 90deg;
+  transition: all 0.5s ease;
+}
+
+.Icon {
+  rotate: -90deg;
+  margin-top: 12px;
+  margin-left: 20px;
+  transition: all 0.5s ease;
+}

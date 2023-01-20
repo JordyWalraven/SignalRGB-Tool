@@ -33,7 +33,7 @@ const NormalizedPage = () => {
   function update(){
     let KeyPressState;
     try{
-      window.electron.fileHander.getKeyDown().then((result)=>{
+      window.inputHandler.getKeyDown().then((result)=>{
         KeyPressState = result;
       })
     } catch (error){
@@ -41,7 +41,7 @@ const NormalizedPage = () => {
     }
 
     try{
-      window.electron.fileHander.getCursorPosition().then((result)=>{
+      window.inputHandler.getCursorPosition().then((result)=>{
         setMouse(JSON.parse(result));
 
         if(KeyPressState === "control"){
@@ -59,7 +59,6 @@ const NormalizedPage = () => {
     } catch (error){
       console.log(error)
     }
-
   setTimeout(() => {
    if(sessionStorage.getItem("shouldGetMouse") === "true"){
     window.requestAnimationFrame(update);

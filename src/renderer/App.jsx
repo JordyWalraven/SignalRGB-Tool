@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import NormalizedPage from './pages/NormalizedPage';
 import EffectLogic from './Logic/EffectLogic';
 import EffectSelectionPage from './pages/EffectSelectionPage';
+import SideBar from './components/Sidebar';
 
 
 export default function App() {
@@ -26,8 +27,8 @@ export default function App() {
     async function assignHtml(){
       const effectLogic = new EffectLogic();
       let htmlFiles ;
-      await window.electron.fileHander.getLocalPath().then(async(e)=>{
-      htmlFiles=  await window.electron.fileHander.getHtmlFiles(window.electron.fileHander.getDynamicPath(e));
+      await window.fileHandler.getLocalPath().then(async(e)=>{
+      htmlFiles=  await window.fileHandler.getHtmlFiles(window.fileHandler.getDynamicPath(e));
       })
       let modifiedHtmlFiles = [];
       htmlFiles.forEach((file) => {
@@ -49,6 +50,7 @@ export default function App() {
   return (
     <>
 
+
     <Router>
     <BasicHeader effect={selectedEffect}/>
       <Routes>
@@ -56,6 +58,7 @@ export default function App() {
         <Route path="normalized" element={<NormalizedPage/>}/>
         <Route path="effectSelection" element={<EffectSelectionPage canvasEffects={effects} updateHeader={refresh}/>}/>
       </Routes>
+      <SideBar/>
     </Router>
     </>
   );
