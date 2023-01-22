@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oWx9F/2h1VPqnnSE1PlPvMm0+AvuwT+flSCt8L8PoTGZdnDWOEogUbzUZQ+c7VYBk8WDpnl8q9Du2nGDxcy+KA==",
+  "dgSpecHash": "kSMCElp6czBcMXfn/MFEJwqC47hCXFmHFG9+WVPWgALVSLYAjuc3gWnbHUX1t75IirA28bjB6m1nmoQ0JP9X3A==",
   "success": true,
   "projectFilePath": "C:\\Github\\SignalRGB-Tool\\core\\Core\\Core.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\jordy\\.nuget\\packages\\serilog.aspnetcore\\2.1.1\\serilog.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\serilog.extensions.logging\\2.0.0\\serilog.extensions.logging.2.0.0.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\serilog.sinks.file\\4.0.0\\serilog.sinks.file.4.0.0.nupkg.sha512",
+    "C:\\Users\\jordy\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.collections.nongeneric\\4.0.1\\system.collections.nongeneric.4.0.1.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
@@ -36,6 +37,7 @@
     "C:\\Users\\jordy\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.linq.expressions\\4.1.0\\system.linq.expressions.4.1.0.nupkg.sha512",
+    "C:\\Users\\jordy\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\system.reflection.emit\\4.0.1\\system.reflection.emit.4.0.1.nupkg.sha512",

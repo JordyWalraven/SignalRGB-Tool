@@ -243,3 +243,5 @@ C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\refint\Core.dll
 C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.pdb
 C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\Core.genruntimeconfig.cache
 C:\Github\SignalRGB-Tool\core\Core\obj\Debug\net6.0-windows\ref\Core.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\System.Management.dll
+C:\Github\SignalRGB-Tool\core\Core\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
