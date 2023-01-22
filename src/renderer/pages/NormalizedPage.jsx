@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
+/* eslint-disable default-case */
 /* eslint-disable radix */
 /* eslint-disable react/jsx-curly-brace-presence */
 /* eslint-disable react/jsx-no-bind */
@@ -11,13 +13,14 @@
 /* eslint-disable prefer-const */
 /* eslint-disable global-require */
 /* eslint-disable prettier/prettier */
-import { Button, Input } from '@mui/material';
-import React, { useEffect, useState } from 'react'
+import { Button, Input } from '@mui/material' ;
+import React, { useEffect, useRef, useState } from 'react'
 import BackButton from 'renderer/components/BackButton'
 import "../css/normalizedPage.css"
 import "../css/basicStyle.css"
 import Select from '@mui/material/Select/Select';
 import MenuItem from '@mui/material/MenuItem/MenuItem';
+import { CopyBlock, atomOneDark } from 'react-code-blocks';
 
 const NormalizedPage = () => {
 
@@ -25,10 +28,11 @@ const NormalizedPage = () => {
   const [FirstPoint,setFirstPoint] = useState(null);
   const [SecondPoint,setSecondPoint] = useState(null);
   const [resolution, setResolution] = useState();
+  const [meterName,setMeterName] = useState("");
   const [resolutionList, setResolutionList] = useState(["3840x2160","2560x1440","1920x1080","1280x720"]);
-  const [selectedMeter, setSelectedMeter] = useState();
-  const [meterList, setMeterList] = useState(["area","linear","colormean","ocr"]);
-
+  const [selectedMeter, setSelectedMeter] = useState("area");
+  const [meterList, setMeterList] = useState(["area","linear","colormean","ocr_textmatch","ocr_numeric"]);
+  const [metaTag, setMetaTag] = useState("");
 
 
   useEffect(() => {
@@ -39,21 +43,26 @@ const NormalizedPage = () => {
     if(SecondPoint == null){
       sessionStorage.setItem("secondPoint", null);
     }
+    generateMeter();
   }, [FirstPoint,SecondPoint])
 
   useEffect(() => {
+   generateMeter();
+  }, [selectedMeter,meterName,resolution])
+
+  useEffect(() => {
     let localStorageRes = localStorage.getItem("resolution");
+    console.log(localStorageRes)
 
     if(resolution == null){
-      setResolution(`${window.screen.width}x${window.screen.height}`)
       if(resolutionList.includes(`${window.screen.width}x${window.screen.height}`) === false)
       resolutionList.push(`${window.screen.width}x${window.screen.height}`)
     }
-    if(localStorageRes === "null"){
+    if(localStorageRes === null){
+      setResolution(`${window.screen.width}x${window.screen.height}`)
       localStorage.setItem("resolution",`${window.screen.width}x${window.screen.height}`);
     } else {
       if(resolutionList.includes(localStorageRes) === false)
-
       resolutionList.push(localStorageRes);
       setResolution(localStorageRes);
     }
@@ -117,6 +126,7 @@ const NormalizedPage = () => {
     } else {
       return `linear-gradient(to right, rgb(${mouse.RGB[0]},${mouse.RGB[1]},${mouse.RGB[2]}), rgb(${mouse.RGB[0]},${mouse.RGB[1]},${mouse.RGB[2]})`
     }
+
   }
 
 
@@ -150,6 +160,45 @@ const NormalizedPage = () => {
     sessionStorage.setItem("secondPoint", null);
   }
 
+  function normalizePoints(point){
+    if(point != null){
+      let normalizedFirstPoint = {
+        X: Math.round((point.X/parseInt(resolution.split("x")[0])*100))/100,
+        Y: Math.round((point.Y/parseInt(resolution.split("x")[1]))*100)/100
+      }
+      return normalizedFirstPoint;
+    }
+    return null;
+  }
+
+
+  function generateMeter(){
+    console.log(meterName)
+    let meter = "<meta";
+    let normalizedFirstPoint = normalizePoints(FirstPoint);
+    let normalizedSecondPoint = normalizePoints(SecondPoint);
+    let normalizedWidth = Math.round(normalizedSecondPoint != null && normalizedFirstPoint !=null ? ((normalizedSecondPoint.X - normalizedFirstPoint.X)*1000) : 0)/1000;
+    let normalizedHeight = Math.round(normalizedSecondPoint != null && normalizedFirstPoint!=null ? (normalizedSecondPoint.Y - normalizedFirstPoint.Y)*1000 : 0)/1000;
+    console.log(selectedMeter)
+    meter += ` meter="${meterName}" type="area" x="${normalizedFirstPoint!=null? normalizedFirstPoint.X:0}" y="${normalizedFirstPoint!=null?normalizedFirstPoint.Y:0}" width="${normalizedWidth}" `
+    switch (selectedMeter) {
+      case "area":
+       meter += `height="${normalizedHeight}"`;
+       break;
+       case "linear":
+       break;
+       case "ocr_textmatch":
+       break;
+       case "ocr_numeric":
+       break;
+    }
+    meter += " />";
+    setMetaTag(meter)
+  }
+
+  function meterNameCallback(metername){
+    setMeterName(metername.target.value);
+  }
 
 
   return (
@@ -166,7 +215,7 @@ const NormalizedPage = () => {
         <h5 className='basicHeader'>Resolution:</h5>
       <Select
       value={resolution}
-      defaultValue={`${window.screen.width}x${window.screen.height}`}
+      defaultValue={localStorage.getItem("resolution") == null? `${window.screen.width}x${window.screen.height}` : localStorage.getItem("resolution")}
       style={{color:"white", backgroundColor:"#3A4E60",width:"150px"}}
       onChange={handleResolutionChange}>
         {resolutionList.map((item)=>{
@@ -192,7 +241,7 @@ const NormalizedPage = () => {
       </div>
       <div className='d-flex justify-content-center align-items-center gap-4 mt-2'>
         <h5 className='basicHeader'>Meter name:</h5>
-        <Input type='text' style={{color:"white", backgroundColor:"#3A4E60", width:"150px", marginLeft:"-10px", padding:"5px"}}></Input>
+        <Input onChange={meterNameCallback} type='text' style={{color:"white", backgroundColor:"#3A4E60", width:"150px", marginLeft:"-10px", padding:"5px"}}></Input>
       </div>
     </div>
 
@@ -220,7 +269,9 @@ const NormalizedPage = () => {
       </div>
     </div>
     <div  style={{width:"100%", marginTop:"2%", minWidth:"500px"}} className="d-flex justify-content-center">
-    <div className='chunkContainer' style={{width:"83%", height:"20vh"}}></div>
+    <div className='chunkContainer' style={{width:"83%", height:"20vh"}}>
+      <CopyBlock height="100%" text={metaTag} language={"html"} theme={atomOneDark}  wrapLines></CopyBlock>
+    </div>
     </div>
 </>
   )
