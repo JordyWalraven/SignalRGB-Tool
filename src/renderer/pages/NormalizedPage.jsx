@@ -42,11 +42,23 @@ const NormalizedPage = () => {
   }, [FirstPoint,SecondPoint])
 
   useEffect(() => {
+    let localStorageRes = localStorage.getItem("resolution");
+
     if(resolution == null){
       setResolution(`${window.screen.width}x${window.screen.height}`)
+      if(resolutionList.includes(`${window.screen.width}x${window.screen.height}`) === false)
+      resolutionList.push(`${window.screen.width}x${window.screen.height}`)
+    }
+    if(localStorageRes === "null"){
+      localStorage.setItem("resolution",`${window.screen.width}x${window.screen.height}`);
+    } else {
+      if(resolutionList.includes(localStorageRes) === false)
 
+      resolutionList.push(localStorageRes);
+      setResolution(localStorageRes);
     }
     console.log(resolution)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resolution])
 
 

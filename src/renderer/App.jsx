@@ -15,6 +15,7 @@ import NormalizedPage from './pages/NormalizedPage';
 import EffectLogic from './Logic/EffectLogic';
 import EffectSelectionPage from './pages/EffectSelectionPage';
 import SideBar from './components/Sidebar';
+import { ToastContainer } from 'react-toastify';
 
 
 export default function App() {
@@ -49,8 +50,7 @@ export default function App() {
 
   return (
     <>
-
-
+    <ToastContainer/>
     <Router>
     <BasicHeader effect={selectedEffect}/>
       <Routes>

@@ -13,6 +13,8 @@ const connection = new ConnectionBuilder().connectTo("./core/Core/bin/Release/ne
 
 connection.onDisconnect = () => {
   console.log('Lost connection to the .Net process');
+  alert("Something went wrong when connecting to the .Net processes!")
+  alert("Please restart the application!");
 };
 
 
