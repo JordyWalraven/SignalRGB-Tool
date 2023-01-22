@@ -7,7 +7,7 @@ import { contextBridge, ipcRenderer, IpcRendererEvent,  } from 'electron';
 const {ConnectionBuilder } = require("electron-cgi")
 const fs = require('fs');
 
-const connection = new ConnectionBuilder().connectTo("dotnet","run","--project","./core/Core").build();
+const connection = new ConnectionBuilder().connectTo("./core/Core/bin/Release/net6.0-windows/win10-x64/Core.exe").build();
 
 
 

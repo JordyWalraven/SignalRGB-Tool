@@ -110,6 +110,7 @@ const NormalizedPage = () => {
 
   function handleResolutionChange(event) {
     console.log(event)
+    localStorage.setItem("resolution", event.target.value);
     setResolution(event.target.value);
   }
 

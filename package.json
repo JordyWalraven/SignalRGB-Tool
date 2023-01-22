@@ -203,7 +203,7 @@
       "package.json"
     ],
     "extraFiles": [
-      "core",
+      "core/Core/bin/Release",
       "images"
     ],
     "afterSign": ".erb/scripts/notarize.js",

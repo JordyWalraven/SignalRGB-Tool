@@ -9,7 +9,7 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, Tray, nativeImage, clipboard, Menu } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, nativeImage, clipboard, Menu } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
@@ -29,7 +29,6 @@ class AppUpdater {
 
 
 let mainWindow: BrowserWindow | null = null;
-let tray:Tray | null = null;
 
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
@@ -156,10 +155,6 @@ app.on('window-all-closed', () => {
   }
 });
 
-app.on('before-quit', () => {
-  tray?.destroy();
-});
-
 app
   .whenReady()
   .then(() => {
@@ -169,22 +164,5 @@ app
       // dock icon is clicked and there are no other windows open.
       if (mainWindow === null) createWindow();
     });
-
-    const icon = nativeImage.createFromPath('images/SignalRGB-Tools-Logo.png');
-    tray = new Tray(icon.resize({ width: 16, height: 16 }));
-    tray.setIgnoreDoubleClickEvents(true);
-    tray.on('click', () => {
-      mainWindow?.show();
-    });
-    const trayMenu = Menu.buildFromTemplate([
-      {
-        label: 'Quit',
-        click: (_) => {
-          app.exit();
-          app.quit();
-        },
-      },
-    ]);
-    tray.setContextMenu(trayMenu);
   })
   .catch(console.log);
