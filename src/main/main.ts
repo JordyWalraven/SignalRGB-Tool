@@ -23,6 +23,11 @@ class AppUpdater {
   }
 }
 
+
+
+
+
+
 let mainWindow: BrowserWindow | null = null;
 let tray:Tray | null = null;
 
@@ -74,7 +79,7 @@ const createWindow = async () => {
     show: false,
     width: 1024,
     height: 728,
-    icon: getAssetPath('icon.png'),
+    icon: getAssetPath("images/SignalRGB-Tools-Logo.png"),
     autoHideMenuBar: true,
     minWidth: 800,
     minHeight: 700,
@@ -128,6 +133,21 @@ const createWindow = async () => {
  * Add event listeners...
  */
 
+const gotTheLock = app.requestSingleInstanceLock();
+
+if (!gotTheLock) {
+  app.quit();
+} else {
+  app.on('second-instance', (event, commandLine, workingDirectory) => {
+    // Кто-то пытался запустить второй экземпляр, мы должны сфокусировать наше окно.
+    if (mainWindow) {
+      if (mainWindow.isMinimized()) mainWindow.restore();
+      mainWindow.show();
+      mainWindow.focus();
+    }
+  });
+}
+
 app.on('window-all-closed', () => {
   // Respect the OSX convention of having the application in memory even
   // after all windows have been closed
@@ -150,9 +170,7 @@ app
       if (mainWindow === null) createWindow();
     });
 
-    const icon = nativeImage.createFromPath(
-      'src/images/SignalRGB-Tools-Logo.png'
-    );
+    const icon = nativeImage.createFromPath('images/SignalRGB-Tools-Logo.png');
     tray = new Tray(icon.resize({ width: 16, height: 16 }));
     tray.setIgnoreDoubleClickEvents(true);
     tray.on('click', () => {

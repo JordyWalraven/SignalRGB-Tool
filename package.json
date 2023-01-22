@@ -192,14 +192,19 @@
     "webpack-merge": "^5.8.0"
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "Signal-Tools",
+    "appId": "org.erb.Signal-Tools",
+
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
       "dist",
       "node_modules",
       "package.json"
+    ],
+    "extraFiles": [
+      "core",
+      "images"
     ],
     "afterSign": ".erb/scripts/notarize.js",
     "mac": {
@@ -231,6 +236,7 @@
       ]
     },
     "win": {
+      "icon":"./images/SignalRGB-Tools-Logo.png",
       "target": [
         "nsis"
       ]
