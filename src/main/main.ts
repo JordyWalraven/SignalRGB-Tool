@@ -86,7 +86,7 @@ const createWindow = async () => {
     },
   });
   mainWindow?.setVisibleOnAllWorkspaces(true, { visibleOnFullScreen: true });
-  mainWindow?.setAlwaysOnTop(true, 'floating');
+  mainWindow?.setAlwaysOnTop(true, 'screen-saver');
   mainWindow?.setFullScreenable(false);
   // Below statement completes the flow
   mainWindow?.moveTop();
@@ -104,10 +104,6 @@ const createWindow = async () => {
     }
   });
 
-  mainWindow.on('close', (event) => {
-    event?.preventDefault();
-    mainWindow?.hide();
-  });
 
   const menuBuilder = new MenuBuilder(mainWindow);
   menuBuilder.buildMenu();
