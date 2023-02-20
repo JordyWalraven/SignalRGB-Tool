@@ -3,6 +3,7 @@ import {
   FileHandler,
   InputHandler,
   ActionHandler,
+  HtmlHandler,
 } from 'main/preload';
 
 declare global {
@@ -11,6 +12,7 @@ declare global {
     fileHander: FileHandler;
     inputHandler: InputHandler;
     actionHandler: ActionHandler;
+    htmlHandler: HtmlHandler;
   }
 }
 

@@ -127,6 +127,10 @@ const actionHandler = {
   }
 }
 
+const htmlHandler = {
+
+}
+
 
 
 
@@ -135,8 +139,10 @@ contextBridge.exposeInMainWorld('electron', electronHandler);
 contextBridge.exposeInMainWorld("fileHandler",fileHandler);
 contextBridge.exposeInMainWorld("inputHandler",inputHandler)
 contextBridge.exposeInMainWorld("actionHandler",actionHandler)
+contextBridge.exposeInMainWorld("htmlHandler",htmlHandler)
 
 export type ElectronHandler = typeof electronHandler;
 export type FileHandler = typeof fileHandler
 export type InputHandler = typeof inputHandler
 export type ActionHandler = typeof actionHandler
+export type HtmlHandler = typeof htmlHandler

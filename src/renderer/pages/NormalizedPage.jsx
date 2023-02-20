@@ -40,6 +40,7 @@ const NormalizedPage = () => {
   const [resolutionTag, setResolutionTag] = useState("");
   const [availableMeters, setAvailableMeters] = useState([]);
   const [openHtmlModal, setOpenHtmlModal] = useState(false);
+  const [doesMeterExist, setDoesMeterExist] = useState(false);
 
   useEffect(() => {
 
@@ -68,7 +69,7 @@ const NormalizedPage = () => {
           meterTags.push(tag);
         }
       });
-    console.log(meterTags)
+
     setAvailableMeters(meterTags);
     }
   }, [selectedMeter,meterName,resolution])
@@ -212,7 +213,7 @@ const NormalizedPage = () => {
     }
 
     console.log(hsl)
-    meter += ` meter="${meterName}" type="${selectedMeter}" x="${normalizedFirstPoint!=null? normalizedFirstPoint.X:0}" y="${normalizedFirstPoint!=null?normalizedFirstPoint.Y:0}" width="${normalizedWidth}" `
+    meter += ` meter="${meterName}" type="${selectedMeter}" tags="VLC,Game" x="${normalizedFirstPoint!=null? normalizedFirstPoint.X:0}" y="${normalizedFirstPoint!=null?normalizedFirstPoint.Y:0}" width="${normalizedWidth}" `
     switch (selectedMeter) {
       case "area":
        meter += `height="${normalizedHeight}" ${hslString}`;
@@ -251,8 +252,23 @@ const NormalizedPage = () => {
     console.log(metername)
     if(metername.type !== "click"){
       setMeterName(metername.target.value);
+      let meterExists = false;
+      availableMeters.forEach(meter => {
+        if(meter.name === metername.target.value){
+          meterExists = true;
+        }
+      });
+      console.log(meterExists)
+      setDoesMeterExist(meterExists);
     } else {
-
+      let meterExists = false;
+      availableMeters.forEach(meter => {
+        console.log(meter)
+        if(meter.meter === metername.target.outerText){
+          meterExists = true;
+        }
+      });
+      setDoesMeterExist(meterExists);
       setMeterName(metername.target.outerText);
     }
   }
@@ -260,7 +276,7 @@ const NormalizedPage = () => {
 
   return (
     <>
-    <HtmlInsertModal openModal={openHtmlModal} />
+    <HtmlInsertModal openModal={openHtmlModal} propMeterExists={doesMeterExist} />
     <br></br>
     <div className='d-flex justify-content-center' style={{"textAlign":"center","gap":"3%", minWidth:"500px"}}>
       <div className='chunkContainer' style={{width:"40%", height:"45vh", marginTop:"5vh", minHeight:"250px"}}>

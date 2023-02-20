@@ -6,6 +6,7 @@ import React,{useState,useEffect} from 'react'
 import { Modal, Typography, Box } from '@mui/material'
 import "../../css/ComponentCss/htmlInsertModal.css"
 import "../../css/basicStyle.css"
+import { electron } from 'process'
 
 const HtmlInsertModal = (props) => {
 
@@ -15,8 +16,12 @@ const HtmlInsertModal = (props) => {
 
 
   useEffect(() => {
-    if(props.openModal>0)
-    setOpen(true)
+    if(props.openModal>0){
+      setOpen(true)
+      const file =  JSON.parse(sessionStorage.getItem("selectedEffect"));
+    }
+    console.log(props.propMeterExists)
+
   }, [props.openModal])
 
   const handleClose = () => {setOpen(false)};

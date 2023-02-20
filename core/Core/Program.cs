@@ -27,6 +27,7 @@ class Program
     connection.On<string>("openDynamicFolder", () => { return FileManager.openDynamicFolder(); });
 
 
+
     connection.Listen();
   }
 }
