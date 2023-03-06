@@ -9,6 +9,6 @@
   box-shadow: 24;
   padding: 4px;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  align-items: center;
 }

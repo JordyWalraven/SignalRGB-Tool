@@ -9,7 +9,7 @@ import { Button } from '@mui/material'
 const HomePageBtn = (props) => {
   return (
     <div style={{"height":"200px",width:"250px", border:"2px solid", borderColor:'#212D3A', borderRadius:"5px", overflow:"hidden"}}>
-      <img style={{height:"150px", width:"246px"}} src="https://www.mkbdigiwerkplaats.nl/wp-content/uploads/2021/04/app-development.jpg"/>
+      <img style={{height:"150px", width:"246px"}} src={props.imgUrl}/>
     <Link to={props.to} style={{textDecoration:"None"}}><Button variant="contained"  className="col-3 buttonColor" style={{height:"47px", backgroundColor:"#3A4E60", width:"246px"}}>{props.title}</Button></Link>
     </div>
   )

@@ -1,4 +1,6 @@
 using System.Diagnostics;
+using System.Drawing.Imaging;
+using System.Net;
 
 namespace Core;
 
@@ -34,7 +36,41 @@ class FileManager
     {
       return "error";
     }
+  }
 
+  public static string[] getGifImages(string url)
+  {
+
+    List<string> IMGs = new List<string>();
+
+    var request = WebRequest.Create(url);
+
+    using (var response = request.GetResponse())
+    using (var stream = response.GetResponseStream())
+    {
+      Image gif = Bitmap.FromStream(stream);
+
+      int numberOfFrames = gif.GetFrameCount(FrameDimension.Time);
+      Image[] frames = new Image[numberOfFrames];
+
+for (int i = 0; i < numberOfFrames; i++)
+      {
+        gif.SelectActiveFrame(FrameDimension.Time, i);
+        frames[i] = ((Image)gif.Clone());
+
+        using (MemoryStream m = new MemoryStream())
+        {
+          frames[i].Save(m, frames[i].RawFormat);
+          byte[] imageBytes = m.ToArray();
+
+          // Convert byte[] to Base64 String
+          string base64String = Convert.ToBase64String(imageBytes);
+          IMGs.Add(base64String);
+        }
+
+      }
+      return IMGs.ToArray();
+    }
 
   }
 }

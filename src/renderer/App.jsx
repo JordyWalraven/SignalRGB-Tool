@@ -16,6 +16,7 @@ import EffectLogic from './Logic/EffectLogic';
 import EffectSelectionPage from './pages/EffectSelectionPage';
 import SideBar from './components/Sidebar';
 import { ToastContainer } from 'react-toastify';
+import SVGPage from './pages/SVGPage';
 
 
 export default function App() {
@@ -57,6 +58,7 @@ export default function App() {
         <Route path="/" element={<Homepage/>} />
         <Route path="normalized" element={<NormalizedPage/>}/>
         <Route path="effectSelection" element={<EffectSelectionPage canvasEffects={effects} updateHeader={refresh}/>}/>
+        <Route path="svgapp" element={<SVGPage/>}/>
       </Routes>
       <SideBar/>
     </Router>

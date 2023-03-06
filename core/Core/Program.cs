@@ -26,7 +26,7 @@ class Program
 
     connection.On<string>("openDynamicFolder", () => { return FileManager.openDynamicFolder(); });
 
-
+    connection.On<string, string[]>("getGifImages",(path)=>{return FileManager.getGifImages(path);});
 
     connection.Listen();
   }

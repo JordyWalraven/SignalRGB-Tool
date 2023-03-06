@@ -15,16 +15,14 @@
 /* eslint-disable prefer-const */
 /* eslint-disable global-require */
 /* eslint-disable prettier/prettier */
-import { Autocomplete, Button, TextField ,Tooltip} from '@mui/material' ;
-import React, { useEffect, useRef, useState } from 'react'
-import BackButton from 'renderer/components/BackButton'
+import { Autocomplete, Button, TextField } from '@mui/material' ;
+import React, { useEffect, useState } from 'react'
 import "../css/normalizedPage.css"
 import "../css/basicStyle.css"
 import Select from '@mui/material/Select/Select';
 import MenuItem from '@mui/material/MenuItem/MenuItem';
 import { CopyBlock, atomOneDark } from 'react-code-blocks';
 import EffectLogic from 'renderer/Logic/EffectLogic';
-import HtmlInsertModal from 'renderer/components/NormalizedPageComponents/HtmlInsertModal';
 
 const NormalizedPage = () => {
 
@@ -33,17 +31,15 @@ const NormalizedPage = () => {
   const [SecondPoint,setSecondPoint] = useState(null);
   const [resolution, setResolution] = useState();
   const [meterName,setMeterName] = useState("");
-  const [resolutionList, setResolutionList] = useState(["3840x2160","2560x1440","1920x1080","1280x720"]);
+  const [resolutionList] = useState(["3840x2160","2560x1440","1920x1080","1280x720","3840x2400","2560x1600","1920x1200","1280x800"]);
   const [selectedMeter, setSelectedMeter] = useState("area");
-  const [meterList, setMeterList] = useState(["area","linear","colormean","ocr_textmatch","ocr_numeric"]);
+  const [meterList] = useState(["area","linear","colormean","ocr_textmatch","ocr_numeric"]);
   const [metaTag, setMetaTag] = useState("");
   const [resolutionTag, setResolutionTag] = useState("");
   const [availableMeters, setAvailableMeters] = useState([]);
-  const [openHtmlModal, setOpenHtmlModal] = useState(false);
-  const [doesMeterExist, setDoesMeterExist] = useState(false);
+
 
   useEffect(() => {
-
     sessionStorage.setItem("shouldGetMouse", "true");
     if(FirstPoint == null){
       sessionStorage.setItem("firstPoint", null);
@@ -236,20 +232,20 @@ const NormalizedPage = () => {
   }
 
   function generateResolutionMeta(){
-    console.log(meterName)
+
     let meter = "<resolution";
     let normalizedFirstPoint = normalizePoints(FirstPoint);
     let normalizedSecondPoint = normalizePoints(SecondPoint);
     let normalizedWidth = Math.round(normalizedSecondPoint != null && normalizedFirstPoint !=null ? ((normalizedSecondPoint.X - normalizedFirstPoint.X)*10000) : 0)/10000;
     let normalizedHeight = Math.round(normalizedSecondPoint != null && normalizedFirstPoint!=null ? (normalizedSecondPoint.Y - normalizedFirstPoint.Y)*10000 : 0)/10000;
-    console.log(selectedMeter)
+
     meter += ` size="${resolution}" x="${normalizedFirstPoint!=null? normalizedFirstPoint.X:0}" y="${normalizedFirstPoint!=null?normalizedFirstPoint.Y:0}" width="${normalizedWidth}" height="${normalizedHeight}" `
     meter += " />";
     setResolutionTag(meter)
   }
 
   function meterNameCallback(metername){
-    console.log(metername)
+
     if(metername.type !== "click"){
       setMeterName(metername.target.value);
       let meterExists = false;
@@ -258,12 +254,12 @@ const NormalizedPage = () => {
           meterExists = true;
         }
       });
-      console.log(meterExists)
+
       setDoesMeterExist(meterExists);
     } else {
       let meterExists = false;
       availableMeters.forEach(meter => {
-        console.log(meter)
+
         if(meter.meter === metername.target.outerText){
           meterExists = true;
         }
@@ -276,7 +272,7 @@ const NormalizedPage = () => {
 
   return (
     <>
-    <HtmlInsertModal openModal={openHtmlModal} propMeterExists={doesMeterExist} />
+
     <br></br>
     <div className='d-flex justify-content-center' style={{"textAlign":"center","gap":"3%", minWidth:"500px"}}>
       <div className='chunkContainer' style={{width:"40%", height:"45vh", marginTop:"5vh", minHeight:"250px"}}>
@@ -332,16 +328,7 @@ const NormalizedPage = () => {
         )}
       />
       </div>
-        <Tooltip title="Select Effect in the top right, otherwise the button will be disabled">
-        <Button  variant='contained' style={{width:"90%", marginTop:"10px", backgroundColor:"#3A4E60"}} onClick={()=>{
-          if(availableMeters.length >0){
-        setOpenHtmlModal((e)=>{
-          return e+1;
 
-        });
-      }
-      }} >Insert Meter/Resolution</Button>
-      </Tooltip>
     </div>
 
       <div style={{width:"40%", marginTop:"5vh", minHeight:"250px"}}>
