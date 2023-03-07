@@ -19,20 +19,6 @@ const LoadingScreen = (props) => {
 
   return (
     <>
-      <div
-        style={{
-          marginLeft: '15%',
-          marginTop: '10%',
-          width: '70vw',
-          height: '50vh',
-          background: '#212D3A',
-          borderRadius: '50px',
-          alignItems: 'center',
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column'
-        }}
-      >
         <br />
         <br />
         <LinearProgress
@@ -41,7 +27,6 @@ const LoadingScreen = (props) => {
           value={progressState}
         />
         <p className="basicHeader">{displayText}</p>
-      </div>
     </>
   );
 };

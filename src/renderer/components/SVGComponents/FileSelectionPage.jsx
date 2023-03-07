@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 /* eslint-disable promise/always-return */
 /* eslint-disable promise/catch-or-return */
@@ -12,10 +15,13 @@ import { Button, TextField } from '@mui/material';
 import '../../css/basicStyle.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { breakDownFrame } from 'renderer/Logic/SVGServices/ToSvgLogic';
+import {
+  breakDownFrame,
+  indexArray
+} from 'renderer/Logic/SVGServices/ToSvgLogic';
 import LoadingScreen from '../LoadingComponents/LoadingScreen';
 
-const FileSelectionPage = () => {
+const FileSelectionPage = (props) => {
   const [processFile, setProcessFile] = useState(false);
 
   const [loadText, setLoadText] = useState('Loading');
@@ -47,7 +53,10 @@ const FileSelectionPage = () => {
           images.push(image);
         }
         const imagePoints = [];
-        doFrameCalculations(0, images, imagePoints);
+        setLoadText('Start processing frames');
+        setTimeout(() => {
+          doFrameCalculations(0, images, imagePoints);
+        }, 100);
       });
     } else {
       toast.error('Invalid Tenor Link', {
@@ -62,19 +71,48 @@ const FileSelectionPage = () => {
   function doFrameCalculations(i, images, imagePoints) {
     setLoadText(`Processing frame ${i + 1} of ${images.length}`);
     setProgression(((i + 1) / images.length) * 100);
-    imagePoints.push(breakDownFrame(images[i]));
+    console.log(images[images.length - 1]);
+    imagePoints.push(
+      breakDownFrame(
+        images[i],
+        images[images.length - 1].width,
+        images[images.length - 1].height,
+        document.getElementById('excanvas')
+      )
+    );
     if (i < images.length - 1) {
       setTimeout(() => {
         doFrameCalculations(i + 1, images, imagePoints);
       }, 50);
     } else {
-      setProcessFile(false);
+      setLoadText(`Indexing points`);
+      setProgression(100);
+      setTimeout(() => {
+        imagePoints = indexArray(imagePoints);
+        props.setSVGArray(imagePoints);
+      }, 50);
     }
   }
   return (
     <>
       {processFile ? (
-        <LoadingScreen textValue={loadText} progress={progression} />
+        <div
+          style={{
+            marginLeft: '15%',
+            marginTop: '10%',
+            width: '70vw',
+            height: '50vh',
+            background: '#212D3A',
+            borderRadius: '50px',
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column'
+          }}
+        >
+          <canvas id="excanvas" style={{ width: '30%', height: '50%' }} />
+          <LoadingScreen textValue={loadText} progress={progression} />
+        </div>
       ) : (
         <div
           style={{

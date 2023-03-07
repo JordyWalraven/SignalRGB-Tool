@@ -60,7 +60,7 @@ for (int i = 0; i < numberOfFrames; i++)
 
         using (MemoryStream m = new MemoryStream())
         {
-          frames[i].Save(m, frames[i].RawFormat);
+          frames[i].Save(m, ImageFormat.Png);
           byte[] imageBytes = m.ToArray();
 
           // Convert byte[] to Base64 String

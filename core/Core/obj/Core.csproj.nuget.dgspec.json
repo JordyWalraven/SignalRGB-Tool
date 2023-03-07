@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Github\\SignalRGB-Tool\\core\\Core\\Core.csproj": {}
+    "C:\\Github\\SignalRGB-Tool\\Core\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Github\\SignalRGB-Tool\\core\\Core\\Core.csproj": {
+    "C:\\Github\\SignalRGB-Tool\\Core\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Github\\SignalRGB-Tool\\core\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Github\\SignalRGB-Tool\\Core\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Github\\SignalRGB-Tool\\core\\Core\\Core.csproj",
+        "projectPath": "C:\\Github\\SignalRGB-Tool\\Core\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\jordy\\.nuget\\packages\\",
-        "outputPath": "C:\\Github\\SignalRGB-Tool\\core\\Core\\obj\\",
+        "outputPath": "C:\\Github\\SignalRGB-Tool\\Core\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

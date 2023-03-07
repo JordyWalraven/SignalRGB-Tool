@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BDHsej8MiwpTOSmOU/PFn7XZWuC9JCLm4htmdCrBgjbesgQ3Krt+zIRhwa/1DTlZ4SaQXo6Tmq3YR83sdN3MsQ==",
+  "dgSpecHash": "WT3KuhjoHR6r+Ki9Sgnz7nHzauv3Qr0nuZDrY4GWsfMwQPWMRyHI3WRHqqw/RUePk7MSQU503rab+c1DObHYkg==",
   "success": true,
-  "projectFilePath": "C:\\Github\\SignalRGB-Tool\\core\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Github\\SignalRGB-Tool\\Core\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jordy\\.nuget\\packages\\electroncgi.dotnet\\1.0.3\\electroncgi.dotnet.1.0.3.nupkg.sha512",
     "C:\\Users\\jordy\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.0.0\\microsoft.aspnetcore.hosting.abstractions.2.0.0.nupkg.sha512",
