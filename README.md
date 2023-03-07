@@ -1,3 +1,5 @@
+# App can't be easily run yet
+
 <div align="center">
 <img src="images/SignalRGB-Tools-Logo.png" width="20%" />
 </div>
