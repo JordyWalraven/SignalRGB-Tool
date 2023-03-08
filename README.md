@@ -1,4 +1,3 @@
-# App can't be easily run yet
 
 <div align="center">
 <img src="images/SignalRGB-Tools-Logo.png" width="20%" />
@@ -16,18 +15,37 @@
 <br>
 
 
-## Starting Development
+## Starting Development Yourself
 
-Start the app in the `dev` environment:
+
+### Setting up development environment
+
+First we need to setup the C# services, for this navigate to the following directory:
+```bash
+cd core/Core
+```
+
+In there run the following command to publish the app and get it ready for use with electron:
 
 ```bash
+dotnet publish -c Release -r win10-x64
+```
+The above steps always need to be repeated after making a change to the c# services.
+
+After this we will run the following line to install all node modules:
+```bash
 npm i
-npm start
+```
+
+### Running the app
+After following the setup steps above the app can be run by the following command:
+```bash
+npm run
 ```
 
 ## Packaging for Production
 
-To package apps for the local platform:
+To package apps the app as exe run:
 
 ```bash
 npm run package
