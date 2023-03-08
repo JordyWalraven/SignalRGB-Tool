@@ -40,7 +40,7 @@ npm i
 ### Running the app
 After following the setup steps above the app can be run by the following command:
 ```bash
-npm run
+npm start
 ```
 
 ## Packaging for Production
