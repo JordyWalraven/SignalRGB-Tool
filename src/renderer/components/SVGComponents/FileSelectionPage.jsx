@@ -19,6 +19,7 @@ import {
   breakDownFrame,
   indexArray
 } from 'renderer/Logic/SVGServices/ToSvgLogic';
+import { getGifImages } from 'renderer/Logic/ApiConnections/FileHandlerConnection';
 import LoadingScreen from '../LoadingComponents/LoadingScreen';
 
 const FileSelectionPage = (props) => {
@@ -45,7 +46,7 @@ const FileSelectionPage = (props) => {
     if (event.target.value.includes('.gif')) {
       setProcessFile(true);
       setLoadText('Fetching gif from tenor');
-      window.fileHandler.getGifImages(event.target.value).then((e) => {
+      getGifImages(event.target.value).then((e) => {
         const images = [];
         for (let index = 0; index < e.length; index++) {
           const image = new Image();

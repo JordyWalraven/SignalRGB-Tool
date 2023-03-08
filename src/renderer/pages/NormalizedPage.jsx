@@ -23,6 +23,7 @@ import Select from '@mui/material/Select/Select';
 import MenuItem from '@mui/material/MenuItem/MenuItem';
 import { CopyBlock, atomOneDark } from 'react-code-blocks';
 import EffectLogic from 'renderer/Logic/EffectLogic';
+import { getKeyDown, getCursorPosition } from 'renderer/Logic/ApiConnections/InputHandlerConnection';
 
 const NormalizedPage = () => {
 
@@ -94,7 +95,7 @@ const NormalizedPage = () => {
   function update(){
     let KeyPressState;
     try{
-      window.inputHandler.getKeyDown().then((result)=>{
+     getKeyDown().then((result)=>{
         KeyPressState = result;
       })
     } catch (error){
@@ -102,7 +103,7 @@ const NormalizedPage = () => {
     }
 
     try{
-      window.inputHandler.getCursorPosition().then((result)=>{
+      getCursorPosition().then((result)=>{
         setMouse(JSON.parse(result));
 
         if(KeyPressState === "control"){
@@ -255,7 +256,7 @@ const NormalizedPage = () => {
         }
       });
 
-      setDoesMeterExist(meterExists);
+
     } else {
       let meterExists = false;
       availableMeters.forEach(meter => {
@@ -264,7 +265,6 @@ const NormalizedPage = () => {
           meterExists = true;
         }
       });
-      setDoesMeterExist(meterExists);
       setMeterName(metername.target.outerText);
     }
   }

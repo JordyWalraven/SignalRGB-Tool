@@ -8,6 +8,7 @@
 import { useEffect, useState } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { ToastContainer } from 'react-toastify';
 import BasicHeader from './components/BasicHeader';
 import Homepage from './pages/Homepage';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -15,8 +16,8 @@ import NormalizedPage from './pages/NormalizedPage';
 import EffectLogic from './Logic/EffectLogic';
 import EffectSelectionPage from './pages/EffectSelectionPage';
 import SideBar from './components/Sidebar';
-import { ToastContainer } from 'react-toastify';
 import SVGPage from './pages/SVGPage';
+import { getLocalPath, getHtmlFiles,getDynamicPath } from './Logic/ApiConnections/FileHandlerConnection';
 
 
 export default function App() {
@@ -29,8 +30,8 @@ export default function App() {
     async function assignHtml(){
       const effectLogic = new EffectLogic();
       let htmlFiles ;
-      await window.fileHandler.getLocalPath().then(async(e)=>{
-      htmlFiles=  await window.fileHandler.getHtmlFiles(window.fileHandler.getDynamicPath(e));
+      await getLocalPath().then(async(e)=>{
+      htmlFiles=  await getHtmlFiles(getDynamicPath(e));
       })
       let modifiedHtmlFiles = [];
       htmlFiles.forEach((file) => {
