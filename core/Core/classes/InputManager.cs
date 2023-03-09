@@ -21,9 +21,12 @@ class InputManager
     return "none";
   }
 
+  [System.Runtime.InteropServices.DllImport("user32.dll")]
+  private static extern bool SetProcessDPIAware();
   public static string getMousePos()
   {
-    Point point = Cursor.Position;
+    SetProcessDPIAware();
+    Point point = Control.MousePosition;
     Color mousecolor = MouseService.GetPixelColor(point.X, point.Y);
     float[] rgb = new float[3];
     rgb[0] = mousecolor.R;

@@ -17,7 +17,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
   breakDownFrame,
-  indexArray
+  indexArray,
 } from 'renderer/Logic/SVGServices/ToSvgLogic';
 import { getGifImages } from 'renderer/Logic/ApiConnections/FileHandlerConnection';
 import LoadingScreen from '../LoadingComponents/LoadingScreen';
@@ -64,7 +64,7 @@ const FileSelectionPage = (props) => {
         autoClose: 1000,
         hideProgressBar: true,
         closeOnClick: true,
-        theme: 'colored'
+        theme: 'colored',
       });
     }
   }
@@ -108,7 +108,7 @@ const FileSelectionPage = (props) => {
             alignItems: 'center',
             display: 'flex',
             justifyContent: 'center',
-            flexDirection: 'column'
+            flexDirection: 'column',
           }}
         >
           <canvas id="excanvas" style={{ width: '30%', height: '50%' }} />
@@ -122,7 +122,7 @@ const FileSelectionPage = (props) => {
             width: '70vw',
             height: '50vh',
             background: '#212D3A',
-            borderRadius: '50px'
+            borderRadius: '50px',
           }}
           className="d-flex justify-content-center align-items-center"
         >
@@ -135,7 +135,7 @@ const FileSelectionPage = (props) => {
               backgroundColor: '#3A4E60',
               color: 'white',
               borderRadius: '50px',
-              fontSize: '20px'
+              fontSize: '20px',
             }}
           >
             Select File
@@ -152,7 +152,7 @@ const FileSelectionPage = (props) => {
               backgroundColor: '#3A4E60',
               color: 'white',
               fontSize: '20px',
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             InputLabelProps={{ style: { color: 'white' } }}
           />
